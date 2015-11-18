@@ -369,20 +369,35 @@ public class VideoController {
     	
         switch(anInt){
     	case 0:
-    		//noise
-    		image.addNoiseImage(0);
+    		//contrast
+    		//MultiplicativeGaussianNoise
+    		image = image.addNoiseImage(3);
+            System.out.println("%%%%%%%%%%%%%%% filtro 0");
     		break;
     	case 1:
     		//blur
-    		image.blurImage(0, 10);
+    		image = image.blurImage(0, 30);
+            System.out.println("%%%%%%%%%%%%%%% filtro 1");
+
     		break;
     	case 2:
     		//charcoal image
-    		image.charcoalImage(10, 20);
+    		image = image.charcoalImage(10, 20);
+            System.out.println("%%%%%%%%%%%%%%% filtro 2");
+
     		break;
     	case 3:
     		//grayscale
             image.setGrayscale();
+            System.out.println("%%%%%%%%%%%%%%% filtro 3");
+    		break;
+    	case 4:
+    		//MultiplicativeGaussianNoise
+    		image =image.edgeImage(0);
+            System.out.println("%%%%%%%%%%%%%%% filtro 4");
+            break;
+    	case 5:
+    		image.solarizeImage(100);
     		break;
     	default:
     		break;
