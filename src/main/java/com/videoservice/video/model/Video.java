@@ -4,7 +4,6 @@ import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.common.base.Objects;
-import com.videoservice.video.controller.VideoController.VideoRepository;
 
 /**
  * A simple object to represent a video and its URL for viewing.
