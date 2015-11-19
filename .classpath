@@ -5,11 +5,11 @@
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry kind="lib" path="/usr/share/java/jmagick-6.6.9.jar"/>
 	<classpathentry kind="lib" path="/usr/share/java/jmagick.jar">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/usr/lib/jni"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/usr/share/java/jmagick-6.6.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
